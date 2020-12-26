@@ -1,5 +1,5 @@
 <body style="background-color:#02537E;">
-<a href="/index.html">Main Menu</a>
+<p><a style="color: white;" href="/index.html">Main Menu</a></p>
 <div class="x-el x-el-div c1-1 c1-2 c1-1l c1-1u c1-1v c1-4b c1-1f c1-1x c1-1y c1-4c c1-20 c1-b c1-c c1-5h c1-5i c1-23 c1-24 c1-4d c1-26 c1-d c1-e c1-f c1-g" data-ux="GridCell" style="box-sizing: border-box; letter-spacing: normal; text-transform: none; font-family: Lato, arial, sans-serif; font-size: 18px; max-width: 50%; flex: 1 1 50%; padding: 0px 24px 48px;">
     <div class="x-el x-el-div x-el c1-1 c1-2 c1-s c1-1k c1-4e c1-4f c1-4g c1-4h c1-4 c1-4i c1-4j c1-4k c1-b c1-c c1-4l c1-4m c1-d c1-e c1-f c1-g c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g" data-ux="ContentCard" style="box-sizing: inherit; letter-spacing: normal; text-transform: none; width: 592px; font-family: Lato, arial, sans-serif; font-size: 18px; position: relative; display: flex; flex-direction: column; align-items: flex-start;  justify-content: flex-start;">
         <h4 class="x-el x-el-h4 c1-1 c1-2 c1-22 c1-21 c1-3k c1-17 c1-16 c1-x c1-y c1-b c1-42 c1-3c c1-3q c1-3d c1-3e c1-3f c1-3g" data-aid="ABOUT_HEADLINE_RENDERED2" data-typography="HeadingDelta" data-ux="ContentCardHeading" style="box-sizing: inherit; letter-spacing: normal; text-transform: none; font-family: Lato, arial, sans-serif; margin: 0px 0px 24px; overflow-wrap: break-word; font-size: 24px; line-height: 1.25; font-weight: 400; color: rgb(255, 255, 255); max-width: 100%;"><br>Insurance</h4>
@@ -22,4 +22,16 @@
         </div>
     </div>
 </div>
+<script> if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./service-worker.js', {scope: './'})
+    .then((reg) => {
+      // registration worked
+      console.log('Registration succeeded. Scope is ' + reg.scope);
+    }).catch((error) => {
+      // registration failed
+      console.log('Registration failed with ' + error);
+    });
+  }
+  
+  </script>  
 </body>
